@@ -1,0 +1,237 @@
+/*header*/
+header img {
+    height: 35px;
+    margin-left: 18px;
+}
+
+header {
+    align-items: center; /*vertical centering*/
+    background-color: black;
+    box-shadow: 0 0 15px 0 rgb(3, 4, 75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.header-content {
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header-content img {
+    margin-right: 5px;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+}
+
+/*header navbar button from right side*/
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul ul {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    right: -25px;
+}
+
+.navbar ul li {
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+}
+
+.navbar ul li:hover > ul {
+    display: block;
+}
+
+.navbar ul ul li {
+    display: block;
+}
+
+.navbar ul ul li a {
+    display: block;
+    padding: 1px;
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar ul ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+/*body*/
+body {
+    background-color: #d9f1f4;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow-x: hidden; 
+    padding: 0;
+}
+
+/*hero section*/
+#hero {
+    background: linear-gradient(to bottom, #d5a8f0, #d9f1f4);
+    /* background-color: #f0f0f0; */
+    padding: 60px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#hero p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#hero button {
+    background-color: #1e0b36; 
+    color: white;
+    border: none;
+    padding: 10px 22px; 
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px; 
+    transition: background-color 0.3s, transform 0.2s; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#hero button:hover {
+    background-color: #7e51b4;
+    transform: translateY(-2px); 
+}
+
+/*album section*/
+.album-image {
+    width: 400px;
+    height: 250px;
+    display: block;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#album {
+    /* padding: 20px 0; */
+    text-align: center;
+}
+
+#album table {
+    /* border-collapse: collapse; */
+    border-spacing: 20px; 
+    margin: 0 auto;
+    padding: 3px;
+    width: 80%;
+}
+
+#album td {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 10px;
+}
+
+.album-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#album p {
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#album button {
+    background-color: #1e0b36; 
+    color: white;
+    border: none;
+    padding: 8px 20px; 
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px; 
+    transition: background-color 0.3s, transform 0.2s; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#album button:hover {
+    background-color: #555;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-container button {
+    margin-right: 5px;
+}
+
+.button-container time {
+    margin-left: auto;
+}
+
+/*footer*/
+#footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#footer div:first-child {
+    text-align: left;
+}
+
+#footer p {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
